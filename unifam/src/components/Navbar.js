@@ -11,6 +11,9 @@ function Navbar() {
         <Link to="/login">
             <button className = "buttons" type="button">Login</button>
         </Link>
+        <Link to="/playlist">
+            <button className = "buttons" type="button">Playlist</button>
+        </Link>
       </div>
     );
   };
