@@ -13,7 +13,9 @@ function App() {
         <Route path='/login' component={Login} />
         <Route path='/playlist' component={Playlist} />
       </Switch>
-    </main> 
+
+    
+    </main>
   );
 }
 
