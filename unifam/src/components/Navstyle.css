@@ -1,0 +1,29 @@
+.navbar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    top:0%;
+    width: 100%;
+    margin-left: 0%;
+    z-index: 20;
+    background-color: #1b3355;
+}
+
+.buttons {
+        color: #3d1b75; 
+        font-size: 18px; 
+        line-height: 18px; 
+        padding: 8px; 
+        font-family: Georgia, serif; 
+        display: inline-block;
+}
+        
+.buttons:hover {
+        background: #1C6EA4; 
+    }
+        
+.buttons:active {
+        background: #144E75; 
+    }

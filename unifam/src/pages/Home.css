@@ -1,0 +1,11 @@
+:root {
+    --bg-color: #1b3355;
+  }
+
+.pagetitle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fefefe;
+    font-size: 40px;
+    size: 150px;
+    text-align: center;
+  }
