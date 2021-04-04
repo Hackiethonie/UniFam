@@ -1,19 +1,13 @@
+
+
 .a {
-  border: 1px solid red;
+  font-size: 5rem; 
+  margin: 5rem 2rem;
 }
 
 .b {
   border: 1px solid blue;
-}
-
-.row {
-  display: flex;
-  height: 50vh;
-}
-
-.row2 {
-  display: flex;
-  justify-content: space-between;
-  height: 50vh;
-  margin: 200px;
+  font-size: 5rem; 
+  position: relative; 
+  bottom: -4rem; 
 }

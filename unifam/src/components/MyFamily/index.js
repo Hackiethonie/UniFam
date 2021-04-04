@@ -84,6 +84,7 @@ render() {
 
 
     return (
+
         <div>
 
       <div className = "horizflex">
@@ -174,6 +175,7 @@ render() {
 
 
 
+
             <div className = "googlelogin">
                 <GoogleLogin 
                     clientId="473264578426-i9ivhtu0b5ns8jcle3c6jjcjf39mr6ur.apps.googleusercontent.com"
@@ -186,6 +188,10 @@ render() {
                 />
             </div>    
             {/*document.getElementById('googleButton')*/}
+
+            <section className="chatroom">
+              
+            </section>
 
         </div>
     );

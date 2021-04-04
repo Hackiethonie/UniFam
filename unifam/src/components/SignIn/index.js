@@ -5,12 +5,15 @@ import { compose } from "recompose";
 import { SignUpLink } from "../SignUp";
 import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constants/routes";
+import "./SignInStyle.css";
 
 const SignInPage = () => (
-  <div>
-    <h1>SignIn</h1>
-    <SignInForm />
-    <SignUpLink />
+  <div className="container">
+    <div className="centered-content">
+      <h1>SignIn</h1>
+      <SignInForm />
+      <SignUpLink />
+    </div>
   </div>
 );
 

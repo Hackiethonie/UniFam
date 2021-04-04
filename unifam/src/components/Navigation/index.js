@@ -13,7 +13,7 @@ const Navigation = () => (
 );
 
 const NavigationAuth = () => (
-  <ul className="navbar">
+  <ul className="navbar-auth">
     <li className="navitem">
       <Link to={ROUTES.LANDING} className="link">
         UniFam
@@ -44,7 +44,7 @@ const NavigationNonAuth = () => (
   <ul className="navbar">
     <li className="navitem">
       <Link to={ROUTES.LANDING} className="link">
-        Landing
+        UniFam
       </Link>
     </li>
     <li className="navitem">
@@ -58,7 +58,6 @@ const NavigationNonAuth = () => (
         My Family
       </Link>
     </li>
-
   </ul>
 );
 

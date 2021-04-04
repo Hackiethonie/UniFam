@@ -2,9 +2,12 @@
 
 * {
   font-family: Poppins;
-  margin: 0;
+  margin: 50;
   border: 0;
+  box-sizing: border-box;
 }
+
+
 
 
 body {
