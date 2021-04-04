@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { AuthUserContext, withAuthorization } from "../Session";
+import { FirebaseContext } from "../Firebase";
 
-import { withAuthorization } from "../Session";
 import { withFirebase } from "../Firebase";
+import "./HomeStyle.css";
 
 class HomePage extends Component {
   constructor(props) {
@@ -38,11 +40,17 @@ class HomePage extends Component {
     const { users, loading } = this.state;
 
     return (
-      <div>
-        <h1>Home</h1>
-
-        {loading && <div>Loading ...</div>}
-        <UserList users={users} />
+      <div className="flex-row">
+        <div className="family-members">
+          {loading && <div>Loading ...</div>}
+          <div>
+            My Fam
+            <UserList users={users} />
+          </div>
+        </div>
+        <div>
+          <ChatRoom />
+        </div>
       </div>
     );
   }
@@ -52,16 +60,27 @@ const UserList = ({ users }) => (
   <ul>
     {users.map((user) => (
       <li key={user.uid}>
-        <span>
-          <strong>Username:</strong> {user.username}
-        </span>
-        <span> </span>
-        <span>
-          <strong>E-Mail:</strong> {user.email}
-        </span>
+        <img></img>
+        <span> {user.username}</span>
       </li>
     ))}
   </ul>
 );
 
-export default withFirebase(HomePage);
+const ChatRoom = ({}) => (
+  <div class="chat-room">
+    <h1>Chat with the fam 💖</h1>
+    <div className="message-container">
+      <div className="messages"></div>
+      <form className="message-form" placeholder="Enter...">
+        <input className="message-input" type="text" placeholder="say something.."></input>
+        <button>Enter</button>
+        
+      </form>
+    </div>
+  </div>
+);
+
+const condition = (authUser) => !!authUser;
+
+export default withAuthorization(condition)(HomePage);

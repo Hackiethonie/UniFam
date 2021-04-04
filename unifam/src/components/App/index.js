@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from "../Navigation";
+import Footer from "../Footer";
+
 import LandingPage from "../Landing";
 import SignUpPage from "../SignUp";
 import SignInPage from "../SignIn";
@@ -23,7 +25,10 @@ const App = () => (
       <Route path={ROUTES.HOME} component={HomePage} />
       <Route path={ROUTES.MY_FAMILY} component={MyFamily} />
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+
+      <Footer />
     </div>
+    
   </Router>
 );
 

@@ -72,8 +72,7 @@ render() {
 
 
     return (
-        <div>
-
+        <div className='wrapper'>
             <GoogleLogin
                 clientId="473264578426-i9ivhtu0b5ns8jcle3c6jjcjf39mr6ur.apps.googleusercontent.com"
                 buttonText="UniFam Channel Login"
@@ -103,6 +102,10 @@ render() {
             {/*<button onClick={this.postVid}>
                 Add this song to the playlist
                 </button>*/}
+
+            <section className="chatroom">
+              
+            </section>
 
         </div>
     );
