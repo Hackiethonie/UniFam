@@ -25,17 +25,28 @@ class MyFamily extends Component {
     super(props);
     this.postVid = this.postVid.bind(this);
 
-    this.state = {url:""};
+    this.state = {url:"", vid_id: ""};
   }
 
 
   onUrlChange(event) {
     this.setState({url: event.target.value});
   }
+
+  getvidID() {
+    var video_id = this.state.url.split('v=')[1];
+    var ampersandPosition = video_id.indexOf('&');
+    if(ampersandPosition != -1) {
+    video_id = video_id.substring(0, ampersandPosition);
+    }
+    this.state.vid_id=video_id;
+  }
   
 
   postVid() {
       console.log(ACCESS_CODE)
+
+      this.getvidID()
 
       axios({
         method: 'POST',
@@ -56,7 +67,7 @@ class MyFamily extends Component {
               "position": 0,
               "resourceId": {
                 "kind": "youtube#video",
-                "videoId": this.state.url
+                "videoId": this.state.vid_id
             }
         }
       }
@@ -81,6 +92,7 @@ render() {
                 onFailure={responseGoogle}
                 cookiePolicy={'single_host_origin'}
                 scope="https://www.googleapis.com/auth/youtube"
+                isSignedIn={true}
             />
             {/*document.getElementById('googleButton')*/}
 
