@@ -56,7 +56,7 @@ class SignInFormBase extends Component {
     const isInvalid = password === "" || email === "";
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form class="signin-form" onSubmit={this.onSubmit}>
         <input
           name="email"
           value={email}
