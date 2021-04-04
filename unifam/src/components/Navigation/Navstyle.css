@@ -41,6 +41,16 @@
   transition: all 1s;
 }
 
+.title {
+  color: rgb(228, 81, 27);
+  font-size: 2rem;
+}
+
+.titlep2 {
+  position: relative;
+  bottom: -1rem;
+}
+
 .buttons {
   color: #3d1b75;
   line-height: 18px;

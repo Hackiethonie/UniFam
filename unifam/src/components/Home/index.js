@@ -5,7 +5,7 @@ import { FirebaseContext } from "../Firebase";
 import { withFirebase } from "../Firebase";
 import "./HomeStyle.css";
 
-import Avatar from './avatar.PNG'
+import Avatar from "./avatar.PNG";
 
 class HomePage extends Component {
   constructor(props) {
@@ -44,8 +44,8 @@ class HomePage extends Component {
     return (
       <div className="flex-row">
         <div className="family-members">
-          <span>Current role: Father</span>
-          <img src={Avatar} alt="picture"/>
+          <span>Current role: Baby</span>
+          <img className="profilepic" src={Avatar} alt="picture" />
           <div>
             <span>Role: Baby </span>
             <p></p>
@@ -81,7 +81,7 @@ const ChatRoom = ({}) => (
     <h1>Chat with the fam 💖</h1>
     <div className="message-container">
       <div className="messages"></div>
-      <form className="message-form" placeholder="Enter...">
+      <form className="message-form">
         <input
           className="message-input"
           type="text"

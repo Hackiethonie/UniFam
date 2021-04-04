@@ -19,9 +19,12 @@ const LandingPage = () => (
           <button className="action-btn">Join Now</button>
         </a>
       </div>
+
       <div className = "container">
       <img src = {Landpage} alt= "picture"/>
       </div>
+
+      
     </div>
   </div>
 );
