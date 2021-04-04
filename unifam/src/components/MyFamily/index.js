@@ -87,40 +87,6 @@ render() {
 
         <div>
 
-      <div className = "horizflex">
-        <div className = "vertiflex">
-          <div className="my">
-            MY
-          </div>
-
-          <div className="fam">
-            FAM
-          </div >
-        </div>
-
-        <div className="vertflex">
-
-          <div className = "playlisttext">
-            "Welcome to your family!"
-          </div>
-
-          <div className = "introtext">
-            Chat with the group to build bonds, and 
-            collaborate on a group playlist to share with the world!
-          </div>
-
-        </div>
-
-      </div>
-
-      <div>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </div>
-
-      <div className = "playlisttext">
-            Chat with your new family.
-      </div>
-
 
       <div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
