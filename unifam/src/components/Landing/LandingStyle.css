@@ -1,9 +1,18 @@
+
+
 .a {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  font-size: 5rem;
+  margin: 5rem 2rem;
+  color: #fe4b4b;
 }
 
 .b {
-  border: 1px solid blue;
+  position: relative;
+  bottom: -4rem;
+  /* border: 1px solid blue; */
+  font-size: 5rem;
+  color: #fe4b4b;
 }
 
 .row {
