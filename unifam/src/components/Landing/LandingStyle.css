@@ -1,28 +1,13 @@
 
 
 .a {
-  /* border: 1px solid red; */
-  font-size: 5rem;
+  font-size: 5rem; 
   margin: 5rem 2rem;
-  color: #fe4b4b;
 }
 
 .b {
-  position: relative;
-  bottom: -4rem;
-  /* border: 1px solid blue; */
-  font-size: 5rem;
-  color: #fe4b4b;
-}
-
-.row {
-  display: flex;
-  height: 50vh;
-}
-
-.row2 {
-  display: flex;
-  justify-content: space-between;
-  height: 50vh;
-  margin: 200px;
+  border: 1px solid blue;
+  font-size: 5rem; 
+  position: relative; 
+  bottom: -4rem; 
 }
