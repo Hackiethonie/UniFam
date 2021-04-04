@@ -12,3 +12,14 @@ p {
     padding: .2rem;
     margin: .2rem;
 }
+
+.fa-github {
+  color: white;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  transition: all .5s;
+}
+
+.fa-github:hover {
+  color: coral;
+}

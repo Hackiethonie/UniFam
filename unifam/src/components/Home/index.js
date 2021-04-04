@@ -42,9 +42,11 @@ class HomePage extends Component {
     return (
       <div className="flex-row">
         <div className="family-members">
-          {loading && <div>Loading ...</div>}
+          <span>Current role: Father</span>
+          <span>Father points awarded: 2</span>
           <div>
-            My Fam
+            My Family Members
+            {loading && <div>Loading ...</div>}
             <UserList users={users} />
           </div>
         </div>
@@ -72,10 +74,13 @@ const ChatRoom = ({}) => (
     <h1>Chat with the fam 💖</h1>
     <div className="message-container">
       <div className="messages"></div>
-      <form className="message-form" placeholder="Enter...">
-        <input className="message-input" type="text" placeholder="say something.."></input>
-        <button>Enter</button>
-        
+      <form className="message-form" placeholder="Enter..."  >
+        <input
+          className="message-input"
+          type="text"
+          placeholder="say something.."
+        ></input>
+        <button class="submit-btn" type="submit">Enter</button>
       </form>
     </div>
   </div>

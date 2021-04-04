@@ -1,0 +1,18 @@
+.container {
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-content2 {
+  margin-left: 20rem;
+}
+
+.about-title {
+  color: rgb(253, 131, 87);
+}
+
+.about-content {
+  width: 50rem;
+  color: white;
+  font-size: 1.5rem;
+}

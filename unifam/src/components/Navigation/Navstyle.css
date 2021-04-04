@@ -18,22 +18,27 @@
   text-decoration: none;
   position: absolute;
   width: 200px;
-  height: 93vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #1d2633;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 .navitem {
-  margin: 1rem 3rem;
+  margin: 1rem 2rem;
+}
+
+.link:hover {
+  color: rgb(255, 118, 69);
 }
 
 .link {
+  font-size: 1.2rem;
   text-decoration: none;
   color: white;
-  margin-right: 2rem;
+  transition: all 1s;
 }
 
 .buttons {
@@ -50,5 +55,10 @@
 
 .buttons:active {
   background: #144e75;
+}
+
+.profile {
+  color: white;
+  font-size: 2rem;
 }
 

@@ -4,8 +4,10 @@ import { withFirebase } from "../Firebase";
 const Footer = () => {
   return (
     <footer>
-      <p>icons</p>
-      <p className="footer">Copied-From-Stack-Overflow</p>
+      <a href="https://github.com/Hackiethonie/UniFam">
+        <i class="fab fa-github"></i>
+      </a>
+      <p className="footer">✨ Copied-From-Stack-Overflow ✨</p>
     </footer>
   );
 };

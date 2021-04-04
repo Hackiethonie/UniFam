@@ -14,11 +14,7 @@ const Navigation = () => (
 
 const NavigationAuth = () => (
   <ul className="navbar-auth">
-    <li className="navitem">
-      <Link to={ROUTES.LANDING} className="link">
-        UniFam
-      </Link>
-    </li>
+    <li className="profile">Welcome Back</li>
     <li className="navitem">
       <Link to={ROUTES.HOME} className="link">
         Home
@@ -30,11 +26,11 @@ const NavigationAuth = () => (
       </Link>
     </li>
     <li className="navitem">
-      <Link to={ROUTES.ACCOUNT} className="link">
-        Account
+      <Link to={ROUTES.ABOUT} className="link">
+        About
       </Link>
     </li>
-    <li className="navitem">
+    <li className="sign-out">
       <SignOutButton />
     </li>
   </ul>

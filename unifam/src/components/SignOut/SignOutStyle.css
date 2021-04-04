@@ -1,0 +1,12 @@
+.signout-btn {
+    font-size: 1.4rem;
+    color: coral;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.signout-btn:hover {
+    background-color: coral;
+    color: white;
+
+}

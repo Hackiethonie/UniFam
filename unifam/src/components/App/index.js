@@ -8,7 +8,7 @@ import SignUpPage from "../SignUp";
 import SignInPage from "../SignIn";
 import HomePage from "../Home";
 import MyFamily from "../MyFamily";
-import AccountPage from "../Account";
+import AboutPage from "../About";
 
 import * as ROUTES from "../../constants/routes";
 import { withAuthentication } from "../Session";
@@ -24,7 +24,7 @@ const App = () => (
       <Route path={ROUTES.SIGN_IN} component={SignInPage} />
       <Route path={ROUTES.HOME} component={HomePage} />
       <Route path={ROUTES.MY_FAMILY} component={MyFamily} />
-      <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+      <Route path={ROUTES.ABOUT} component={AboutPage} />
 
       <Footer />
     </div>
