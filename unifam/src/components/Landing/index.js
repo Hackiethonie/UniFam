@@ -1,5 +1,5 @@
 import "./LandingStyle.css";
-import Landpage from './Landing_Page.PNG'
+import Landpage from './Landing_Page (2).PNG'
 
 const LandingPage = () => (
   
