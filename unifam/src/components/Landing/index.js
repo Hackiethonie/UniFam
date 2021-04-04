@@ -1,6 +1,8 @@
 import "./LandingStyle.css";
+import Landpage from './Landing_Page.PNG'
 
 const LandingPage = () => (
+  
   <div className="wrapper">
     <div className="row">
       <h1>
@@ -17,7 +19,9 @@ const LandingPage = () => (
           <button className="action-btn">Join Now</button>
         </a>
       </div>
-      <div className="pictures">bunch of pictures</div>
+      <div className = "container">
+      <img src = {Landpage} alt= "picture"/>
+      </div>
     </div>
   </div>
 );

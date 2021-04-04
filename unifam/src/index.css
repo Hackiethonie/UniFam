@@ -3,8 +3,8 @@
 * {
   font-family: Poppins;
   margin: 0;
-  border: 0;
-  box-sizing: border-box;
+  
+  
 }
 
 
@@ -16,5 +16,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1b3355;
+  background-color: #094183;
+}
+
+.container {
+  display: flex; 
+  flex-direction: row;
+  transform: translateX(30px, 10px)
 }
