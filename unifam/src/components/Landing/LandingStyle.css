@@ -1,9 +1,14 @@
 .a {
   border: 1px solid red;
+  font-size: 5rem; 
+  margin: 5rem 2rem;
 }
 
 .b {
   border: 1px solid blue;
+  font-size: 5rem; 
+  position: relative; 
+  bottom: -4rem; 
 }
 
 .row {
