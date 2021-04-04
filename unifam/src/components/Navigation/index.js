@@ -14,7 +14,7 @@ const Navigation = () => (
 
 const NavigationAuth = () => (
   <ul className="navbar-auth">
-    <li className="title">UNI<span className="titlep2"> FAM</span> </li>
+    <li className="title">Uni<span className="titlep2"> Fam</span> </li>
     <li className="navitem">
       <Link to={ROUTES.HOME} className="link">
         Home
