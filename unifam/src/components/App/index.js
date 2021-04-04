@@ -6,8 +6,8 @@ import Footer from "../Footer";
 import LandingPage from "../Landing";
 import SignUpPage from "../SignUp";
 import SignInPage from "../SignIn";
-import HomePage from "../Home";
-import MyFamily from "../MyFamily";
+import HomePage from "../Home"; 
+import Project from "../Project";
 import AboutPage from "../About";
 
 import * as ROUTES from "../../constants/routes";
@@ -23,12 +23,11 @@ const App = () => (
       <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
       <Route path={ROUTES.SIGN_IN} component={SignInPage} />
       <Route path={ROUTES.HOME} component={HomePage} />
-      <Route path={ROUTES.MY_FAMILY} component={MyFamily} />
+      <Route path={ROUTES.PROJECT} component={Project} />
       <Route path={ROUTES.ABOUT} component={AboutPage} />
 
       <Footer />
     </div>
-    
   </Router>
 );
 

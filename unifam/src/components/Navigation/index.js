@@ -21,8 +21,8 @@ const NavigationAuth = () => (
       </Link>
     </li>
     <li className="navitem">
-      <Link to={ROUTES.MY_FAMILY} className="link">
-        My Family
+      <Link to={ROUTES.PROJECT} className="link">
+        Project
       </Link>
     </li>
     <li className="navitem">
@@ -50,7 +50,7 @@ const NavigationNonAuth = () => (
     </li>
 
     <li className="navitem">
-      <Link to={ROUTES.MY_FAMILY} className="link">
+      <Link to={ROUTES.ABOUT} className="link">
         About
       </Link>
     </li>

@@ -43,8 +43,12 @@ class HomePage extends Component {
       <div className="flex-row">
         <div className="family-members">
           <span>Current role: Father</span>
-          <img src="avatar.PNG" alt="Profile pic" />
-          <span>Father points awarded: 2</span>
+          <img src={require("../../assets/avatar.PNG")} alt="picture"/>
+          <div>
+            <span>Role: Baby </span>
+            <p></p>
+            <span>Points awarded: 2</span>
+          </div>
           <div>
             My Family Members
             {loading && <div>Loading ...</div>}

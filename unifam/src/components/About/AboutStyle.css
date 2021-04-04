@@ -4,15 +4,19 @@
 }
 
 .centered-content2 {
-  margin-left: 20rem;
 }
 
 .about-title {
+  font-size: 5rem;
+  color: rgb(241, 110, 63);
+}
+
+.highlight {
   color: rgb(253, 131, 87);
 }
 
 .about-content {
   width: 50rem;
-  color: white;
+  color: rgb(223, 223, 223);
   font-size: 1.5rem;
 }
