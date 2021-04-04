@@ -52,6 +52,13 @@ const NavigationNonAuth = () => (
         Sign In
       </Link>
     </li>
+
+    <li className="navitem">
+      <Link to={ROUTES.MY_FAMILY} className="link">
+        My Family
+      </Link>
+    </li>
+
   </ul>
 );
 
