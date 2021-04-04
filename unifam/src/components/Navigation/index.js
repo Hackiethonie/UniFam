@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import SignOutButton from "../SignOut";
 import * as ROUTES from "../../constants/routes";
 import { AuthUserContext } from "../Session";
-
+import "./Navstyle.css";
 
 const Navigation = () => (
   <div>
@@ -13,30 +13,44 @@ const Navigation = () => (
 );
 
 const NavigationAuth = () => (
-  <ul className='navbar'>
-
-    <li>
-      <Link to={ROUTES.LANDING}>UniFam</Link>
+  <ul className="navbar">
+    <li className="navitem">
+      <Link to={ROUTES.LANDING} className="link">
+        UniFam
+      </Link>
     </li>
-    <li>
-      <Link to={ROUTES.HOME}>Home</Link>
+    <li className="navitem">
+      <Link to={ROUTES.HOME} className="link">
+        Home
+      </Link>
     </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
+    <li className="navitem">
+      <Link to={ROUTES.MY_FAMILY} className="link">
+        My Family
+      </Link>
     </li>
-    <li>
+    <li className="navitem">
+      <Link to={ROUTES.ACCOUNT} className="link">
+        Account
+      </Link>
+    </li>
+    <li className="navitem">
       <SignOutButton />
     </li>
   </ul>
 );
 
 const NavigationNonAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
+  <ul className="navbar">
+    <li className="navitem">
+      <Link to={ROUTES.LANDING} className="link">
+        Landing
+      </Link>
     </li>
-    <li>
-      <Link to={ROUTES.SIGN_IN}>Sign In</Link>
+    <li className="navitem">
+      <Link to={ROUTES.SIGN_IN} className="link">
+        Sign In
+      </Link>
     </li>
   </ul>
 );
