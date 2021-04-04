@@ -1,16 +1,54 @@
 .wrapper {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.a {
+.heading-p1 {
+  color: rgb(221, 74, 21);
   font-size: 5rem;
   margin: 5rem 2rem;
 }
 
-.b {
+.heading-p2 {
   /* border: 1px solid blue; */
+  color: rgb(221, 74, 21);
   font-size: 5rem;
   position: relative;
   bottom: -4rem;
+}
+
+.row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.action {
+  font-size: 3rem;
+}
+
+.action-btn {
+  width: 20rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+}
+
+.action-btn:hover {
+  background-color: coral;
+  color: white;
+}
+
+.pictures {
+  margin: 10rem;
+}
+
+.info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
 }
