@@ -14,7 +14,7 @@ const Navigation = () => (
 const NavigationAuth = () => (
   <ul>
     <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
+      <Link to={ROUTES.LANDING}>UniFam</Link>
     </li>
     <li>
       <Link to={ROUTES.HOME}>Home</Link>
