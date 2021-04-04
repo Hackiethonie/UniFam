@@ -8,7 +8,7 @@ import GoogleLogin from 'react-google-login';
 import "./MyFamily.css"
 
 
-var ACCESS_CODE;
+var ACCESS_CODE = "ya29.a0AfH6SMDZywY2TuC0zAGRY5UTUEvMG84kxBnc9N453e3wi-T-T5HgADBQ9PEJVriYLAChemXj0VHK9ZRyFhOdxLqzFbu3hwsc5pi6sFn-SrGu_mmauHPq0IecBJx8Y4HJldfXBEu1KW4kHDNBYu98uTyltlgd";
 
 const responseGoogle = (response) => {
     console.log(response);
