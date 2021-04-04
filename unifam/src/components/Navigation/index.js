@@ -51,7 +51,7 @@ const NavigationNonAuth = () => (
 
     <li className="navitem">
       <Link to={ROUTES.MY_FAMILY} className="link">
-        My Family
+        About
       </Link>
     </li>
   </ul>

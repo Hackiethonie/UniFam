@@ -43,6 +43,7 @@ class HomePage extends Component {
       <div className="flex-row">
         <div className="family-members">
           <span>Current role: Father</span>
+          <img src="avatar.PNG" alt="Profile pic" />
           <span>Father points awarded: 2</span>
           <div>
             My Family Members
@@ -74,13 +75,15 @@ const ChatRoom = ({}) => (
     <h1>Chat with the fam 💖</h1>
     <div className="message-container">
       <div className="messages"></div>
-      <form className="message-form" placeholder="Enter..."  >
+      <form className="message-form" placeholder="Enter...">
         <input
           className="message-input"
           type="text"
           placeholder="say something.."
         ></input>
-        <button class="submit-btn" type="submit">Enter</button>
+        <button class="submit-btn" type="submit">
+          Enter
+        </button>
       </form>
     </div>
   </div>

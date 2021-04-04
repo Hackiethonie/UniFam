@@ -1,13 +1,16 @@
-
+.wrapper {
+  /* border: 1px solid red; */
+  height: 80vh;
+}
 
 .a {
-  font-size: 5rem; 
+  font-size: 5rem;
   margin: 5rem 2rem;
 }
 
 .b {
-  border: 1px solid blue;
-  font-size: 5rem; 
-  position: relative; 
-  bottom: -4rem; 
+  /* border: 1px solid blue; */
+  font-size: 5rem;
+  position: relative;
+  bottom: -4rem;
 }
