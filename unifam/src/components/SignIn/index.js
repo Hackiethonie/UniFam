@@ -10,7 +10,7 @@ import "./SignInStyle.css";
 const SignInPage = () => (
   <div className="container">
     <div className="centered-content">
-      <h1>SignIn</h1>
+      <h1>Sign In</h1>
       <SignInForm />
       <SignUpLink />
     </div>

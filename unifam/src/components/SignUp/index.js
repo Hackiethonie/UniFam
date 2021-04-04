@@ -3,11 +3,15 @@ import { Link, withRouter } from "react-router-dom";
 
 import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constants/routes";
+import "./SignUpStyle.css";
 
 const SignUpPage = () => (
-  <div>
-    <h1>SignUp</h1>
-    <SignUpForm />
+  <div className="container">
+    <div className="centered-content">
+      <h1>Sign up</h1>
+      <h2>Find your family today</h2>
+      <SignUpForm />
+    </div>
   </div>
 );
 
@@ -68,7 +72,7 @@ class SignUpFormBase extends Component {
       username === "";
 
     return (
-      <form onSubmit={this.onSubmit}>
+      <form class="signup-form" onSubmit={this.onSubmit}>
         <input
           name="username"
           value={username}
