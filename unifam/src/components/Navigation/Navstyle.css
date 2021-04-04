@@ -1,29 +1,38 @@
 .navbar {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  text-decoration: none;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    
-    top:0%;
-    width: 100%;
-    margin-left: 0%;
-    z-index: 20;
-    background-color: #1b3355;
+  top: 0%;
+  width: 100%;
+
+  background-color: #1b3355;
 }
 
+.navitem {
+  margin: 1rem 3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+}
 .buttons {
-        color: #3d1b75; 
-        font-size: 18px; 
-        line-height: 18px; 
-        padding: 8px; 
-        font-family: Georgia, serif; 
-        display: inline-block;
+  color: #3d1b75;
+  line-height: 18px;
+  padding: 8px;
+  font-family: Georgia, serif;
+  display: inline-block;
 }
-        
+
 .buttons:hover {
-        background: #1C6EA4; 
-    }
-        
+  background: #1c6ea4;
+}
+
 .buttons:active {
-        background: #144E75; 
-    }
+  background: #144e75;
+}
