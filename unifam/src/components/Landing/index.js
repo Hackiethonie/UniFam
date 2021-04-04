@@ -17,7 +17,7 @@ const LandingPage = () => (
           <button className="action-btn">Join Now</button>
         </a>
       </div>
-      <div className="pictures">bunch of pictures</div>
+      <div className="pictures"></div>
     </div>
   </div>
 );
