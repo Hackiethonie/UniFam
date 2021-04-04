@@ -5,6 +5,7 @@ import { withFirebase } from "../Firebase";
 
 import axios from 'axios';
 import GoogleLogin from 'react-google-login';
+import "./MyFamily.css"
 
 
 var ACCESS_CODE;
@@ -85,6 +86,13 @@ render() {
     return (
         <div>
 
+          <div className="my">
+            MY
+          </div>
+
+          <div>
+            FAM
+          </div>
             <GoogleLogin
                 clientId="473264578426-i9ivhtu0b5ns8jcle3c6jjcjf39mr6ur.apps.googleusercontent.com"
                 buttonText="UniFam Channel Login"
