@@ -86,43 +86,106 @@ render() {
     return (
         <div>
 
+      <div className = "horizflex">
+        <div className = "vertiflex">
           <div className="my">
             MY
           </div>
 
-          <div>
+          <div className="fam">
             FAM
+          </div >
+        </div>
+
+        <div className="vertflex">
+
+          <div className = "playlisttext">
+            "Welcome to your family!"
           </div>
-            <GoogleLogin
-                clientId="473264578426-i9ivhtu0b5ns8jcle3c6jjcjf39mr6ur.apps.googleusercontent.com"
-                buttonText="UniFam Channel Login"
-                onSuccess={responseGoogle}
-                onFailure={responseGoogle}
-                cookiePolicy={'single_host_origin'}
-                scope="https://www.googleapis.com/auth/youtube"
-                isSignedIn={true}
-            />
-            {/*document.getElementById('googleButton')*/}
+
+          <div className = "introtext">
+            Chat with the group to build bonds, and 
+            collaborate on a group playlist to share with the world!
+          </div>
+
+        </div>
+
+      </div>
+
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+
+      <div className = "playlisttext">
+            Chat with your new family.
+      </div>
 
 
-            <div> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL254fztT4JHiwo0r2v9FTuBhTWN4bjcWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> 
-                </iframe> 
-            </div>
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
 
 
-            <form onSubmit={this.postVid.bind(this)}>
-                <label>
-                    video id:
-                    <input type="text" value={this.state.url} onChange={this.onUrlChange.bind(this)} />
-                </label>
-                    <input type="submit" value="Add to playlist" />
-            </form>
+    <div className = "vertiflexC">
+      <div className = "playlisttext">
+            Collaborate on the family playlist.
+      </div>
+
+      <div className = "playlisttheme">
+            This week's theme: Productivity
+      </div>
+
+      
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+
+
+      <div> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL254fztT4JHiwo0r2v9FTuBhTWN4bjcWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> 
+         </iframe> 
+      </div>
+
+      <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+
+
+      <div className = "playlisttheme">
+            Add a video to the playlist.
+      </div>
+
+      <form onSubmit={this.postVid.bind(this)}>
+        <label className = "formtext">
+          <div className = "formtext">
+          Youtube URL:   
+          </div>
+          <input type="text" value={this.state.url} onChange={this.onUrlChange.bind(this)} />
+        </label>
+        <input type="submit" value="Add to playlist" />
+      </form>
+
+    </div>
 
             {/*<button onClick={this.postVid}>
                 Add this song to the playlist
                 </button>*/}
+
+
+
+            <div className = "googlelogin">
+                <GoogleLogin 
+                    clientId="473264578426-i9ivhtu0b5ns8jcle3c6jjcjf39mr6ur.apps.googleusercontent.com"
+                    buttonText="UniFam Channel Login"
+                    onSuccess={responseGoogle}
+                    onFailure={responseGoogle}
+                    cookiePolicy={'single_host_origin'}
+                    scope="https://www.googleapis.com/auth/youtube"
+                    isSignedIn={true}
+                />
+            </div>    
+            {/*document.getElementById('googleButton')*/}
 
         </div>
     );
