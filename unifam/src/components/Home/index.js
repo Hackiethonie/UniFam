@@ -5,6 +5,8 @@ import { FirebaseContext } from "../Firebase";
 import { withFirebase } from "../Firebase";
 import "./HomeStyle.css";
 
+import Avatar from './avatar.PNG'
+
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -43,7 +45,7 @@ class HomePage extends Component {
       <div className="flex-row">
         <div className="family-members">
           <span>Current role: Father</span>
-          <img src={require("../../assets/avatar.png")} alt="picture"/>
+          <img src={Avatar} alt="picture"/>
           <div>
             <span>Role: Baby </span>
             <p></p>
